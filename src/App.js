@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
-function App() {
+
+
+function FormPage() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<form class="text-center border border-light p-5" action="#!">
+
+<p class="h4 mb-4">Sign in to learn</p>
+
+<p>Join our plateform to learn REACT JS .</p>
+
+<p>
+    <a href="" target="_blank">See the last newsletter</a>
+</p>
+
+<input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name"/>
+
+<input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail"/>
+
+<button class="btn btn-info btn-block" type="submit">Sign in</button>
+
+
+</form>
+  
+    
+      
+    
   );
 }
 
-export default App;
+export default  FormPage;
